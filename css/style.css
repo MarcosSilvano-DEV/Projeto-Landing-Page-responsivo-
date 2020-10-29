@@ -113,7 +113,8 @@
     
 }
 .conteudo_sobre img{
-    width: 491px;
+    width: 100%;
+    max-width: 491px;
     margin-right: 2em;
 }
 .texto_sobre{
@@ -241,7 +242,8 @@
         flex-direction: column;
     }
     .conteudo_sobre img {
-        width: 600px;
+        width: 100%;
+        max-width: 600px;
     }
     .sobre {
         width: 80%;
@@ -275,5 +277,14 @@
 
     .text-endereco img {
         position: unset;
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (max-widith: 992px){
+    .sobre{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
